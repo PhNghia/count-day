@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 60vw;
+    height: 60vh;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.form-input label {
+    display: inline-block;
+    width: 100px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.form-input input {
+    padding: 2px 8px;
+    font-size: 18px;
+}
+
+.form-input button {
+    border: 1px solid #ccc;
+    background-color: #ddd;
+    outline: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px 0 25px;
+    padding: 8px 10px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all .3s linear;
+}
+
+.form-input button:hover {
+    background-color: #ccc;
+}
+
+.note {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.form-button {
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+}
+
+.form-button.dateActive {
+    visibility: visible;
+}
+
+.form-button button {
+    margin-left: 20px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 40px;
+    color: #333;
+}
